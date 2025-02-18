@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#piano {
+    display: flex;
+    justify-content: center;
+    gap: 1px; 
+    align-items: flex-end;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.key.white {
+    width: 60px; 
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.key.white .note {
+    font-size: 12px;
+    color: #555;
+}
+
+.key:active {
+    background-color: #ddd;
+}
+
+.key.pressed {
+    background-color: #bbb; /* Efeito de tecla pressionada */
+}
+
+.key:focus {
+    outline: none;
+}
+
